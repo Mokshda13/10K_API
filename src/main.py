@@ -17,7 +17,7 @@ user_end = int(input("Enter end period (YYYY): "))
 #Download data
 
 from datadownloader import fetch_sec_facts_by_sic
-data_10k = fetch_sec_facts_by_sic(company_data, sic_code, headers, user_start, user_end, limit=2)
+data_10k = fetch_sec_facts_by_sic(company_data, sic_code, headers, user_start, user_end, limit=5)
 
 
 # Save data to csv
